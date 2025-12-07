@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moddi Tech Designs - Full Stack Development & AI Integration">
+    <title> PORTFOLIO Moddi Tech Designs | Full Stack & AI Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Main Content Link for Accessibility -->
+    <a href="#main" class="skip-link">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#main" class="logo" aria-label="Moddi Tech Designs home">
+                    <div class="logo-icon" aria-hidden="true">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">MODDI</span>
+                        <span class="logo-subtitle">Tech Designs</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#tech" class="nav-link">Technologies</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#ai" class="nav-link">AI Solutions</a>
+                    <a href="#contact" class="btn-nav">Contact</a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="sr-only">Menu</span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu" aria-label="Mobile menu" hidden>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#tech" class="mobile-link">Technologies</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#ai" class="mobile-link">AI Solutions</a>
+            <a href="#contact" class="mobile-cta">Start Project</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" tabindex="-1">
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-label="Hero section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-terminal" aria-hidden="true"></i>
+                            Full Stack Development
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Software Development</span>
+                            <span>with AI Integration</span>
+                        </h1>
+                        <p class="hero-description">
+                            We build modern web applications, mobile apps, and AI-powered solutions that drive business growth. From concept to deployment, we deliver scalable, high-performance software.
+                        </p>
+                        
+                        <div class="hero-stats" aria-label="Company statistics">
+                            <div class="stat">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projects Built</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">AI</div>
+                                <div class="stat-label">Powered Solutions</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support</div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                                Start Project
+                            </a>
+                            <a href="https://modditechdesigns-ctrl.github.io/moddi-tech-designs/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="View our GitHub portfolio (opens in new tab)">
+                                <i class="fas fa-code-branch" aria-hidden="true"></i>
+                                View GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="code-filename">ai-integration.js</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code>// AI Integration Example
+async function integrateAI() {
+  const model = await loadModel('gpt-4');
+  const userInput = await getUserInput();
+  
+  // AI-powered response generation
+  const response = await model.generate({
+    prompt: userInput,
+    temperature: 0.7
+  });
+  
+  return processResponse(response);
+}
+
+// Real-time data processing
+class DataPipeline {
+  constructor() {
+    this.aiProcessor = new AIProcessor();
+    this.db = new Database();
+  }
+  
+  async processStream(data) {
+    const insights = await this.aiProcessor.analyze(data);
+    await this.db.storeInsights(insights);
+    return this.generateReport(insights);
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services" aria-label="Services section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Development Services</h2>
+                    <p class="section-subtitle">Comprehensive software development solutions</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon" aria-hidden="true">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <p>Full-stack web applications with modern frameworks and scalable architecture.</p>
+                        <ul class="service-list">
+                            <li>React, Vue.js, Angular</li>
+                            <li>Node.js, Python, PHP</li>
+                            <li>RESTful & GraphQL APIs</li>
+                            <li>Database Design & Optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon" aria-hidden="true">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile Development</h3>
+                        </div>
+                        <p>Cross-platform mobile applications with native performance and seamless UX.</p>
+                        <ul class="service-list">
+                            <li>React Native, Flutter</li>
+                            <li>iOS & Android Native</li>
+                            <li>Progressive Web Apps</li>
+                            <li>App Store Optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon" aria-hidden="true">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI Integration</h3>
+                        </div>
+                        <p>Intelligent solutions powered by machine learning and artificial intelligence.</p>
+                        <ul class="service-list">
+                            <li>Chatbot Development</li>
+                            <li>Predictive Analytics</li>
+                            <li>Computer Vision</li>
+                            <li>Natural Language Processing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon" aria-hidden="true">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <p>Robust server-side solutions with cloud integration and microservices.</p>
+                        <ul class="service-list">
+                            <li>API Development</li>
+                            <li>Cloud Services (AWS, Azure)</li>
+                            <li>Database Management</li>
+                            <li>System Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-stack" id="tech" aria-label="Technology stack section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technology Stack</h2>
+                    <p class="section-subtitle">Modern tools and frameworks we work with</p>
+                </div>
+                
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h3><i class="fas fa-code" aria-hidden="true"></i> Frontend</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Vue.js</span>
+                            <span class="tech-item">Angular</span>
+                            <span class="tech-item">TypeScript</span>
+                            <span class="tech-item">Next.js</span>
+                            <span class="tech-item">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3><i class="fas fa-server" aria-hidden="true"></i> Backend</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Express.js</span>
+                            <span class="tech-item">Django</span>
+                            <span class="tech-item">FastAPI</span>
+                            <span class="tech-item">PostgreSQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3><i class="fas fa-robot" aria-hidden="true"></i> AI/ML</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">PyTorch</span>
+                            <span class="tech-item">OpenAI API</span>
+                            <span class="tech-item">LangChain</span>
+                            <span class="tech-item">Computer Vision</span>
+                            <span class="tech-item">NLP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h3><i class="fas fa-cloud" aria-hidden="true"></i> DevOps</h3>
+                        <div class="tech-items">
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">Kubernetes</span>
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">Azure</span>
+                            <span class="tech-item">GitHub Actions</span>
+                            <span class="tech-item">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Solutions -->
+        <section class="ai-solutions" id="ai" aria-label="AI solutions section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI & Machine Learning Solutions</h2>
+                    <p class="section-subtitle">Intelligent applications powered by cutting-edge AI</p>
+                </div>
+                
+                <div class="ai-grid">
+                    <div class="ai-card">
+                        <div class="ai-icon" aria-hidden="true">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>AI Chatbots</h3>
+                        <p>Intelligent conversational agents using NLP for customer support, lead generation, and automation.</p>
+                        <div class="ai-features">
+                            <span>Contextual Understanding</span>
+                            <span>Multi-language Support</span>
+                            <span>Sentiment Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ai-card">
+                        <div class="ai-icon" aria-hidden="true">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Predictive Analytics</h3>
+                        <p>Machine learning models for forecasting, trend analysis, and data-driven decision making.</p>
+                        <div class="ai-features">
+                            <span>Time Series Analysis</span>
+                            <span>Anomaly Detection</span>
+                            <span>Real-time Predictions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ai-card">
+                        <div class="ai-icon" aria-hidden="true">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Computer Vision</h3>
+                        <p>Image and video analysis for object detection, facial recognition, and visual search systems.</p>
+                        <div class="ai-features">
+                            <span>Object Detection</span>
+                            <span>Image Classification</span>
+                            <span>Video Analytics</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ai-card">
+                        <div class="ai-icon" aria-hidden="true">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>NLP Solutions</h3>
+                        <p>Natural language processing for text analysis, sentiment detection, and automated content generation.</p>
+                        <div class="ai-features">
+                            <span>Text Classification</span>
+                            <span>Entity Recognition</span>
+                            <span>Text Generation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ai-process">
+                    <h3>Our AI Development Process</h3>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Data Collection & Preparation</h4>
+                                <p>Gathering and cleaning datasets for model training and validation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Model Development</h4>
+                                <p>Building and training machine learning models with appropriate algorithms.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Integration & Deployment</h4>
+                                <p>Integrating AI models into existing systems and deploying to production.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Monitoring & Optimization</h4>
+                                <p>Continuous monitoring, retraining, and optimization of AI systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects" aria-label="Projects section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recent Projects</h2>
+                    <p class="section-subtitle">Showcase of our development work</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-badge">AI + Web App</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Content Generator</h3>
+                            <p>Full-stack web application with AI-powered content generation and management system.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>OpenAI API</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="https://modditechdesigns-ctrl.github.io/AI-Content-Generator/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View AI Content Generator case study (opens in new tab)">
+                                View 
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-badge">Mobile + AI</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Health Assistant</h3>
+                            <p>Mobile app with AI-powered health tracking and personalized recommendations.</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="https://modditechdesigns-ctrl.github.io/smart-health-assistant/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Smart Health Assistant case study (opens in new tab)">
+                                View
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-badge">E-commerce + AI</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-Powered E-commerce</h3>
+                            <p>Online store with AI recommendation engine and personalized shopping experience.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Django</span>
+                                <span>ML Algorithms</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="https://modditechdesigns-ctrl.github.io/Nexus-AI/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View AI-Powered E-commerce case study (opens in new tab)">
+                                View 
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://modditechdesigns-ctrl.github.io/moddi-tech-designs/" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="View full portfolio (opens in new tab)">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        View Full Portfolio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact" aria-label="Contact section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Start Your Tech Project</h2>
+                        <p>Have an idea for a web application, mobile app, or AI solution? Let's build it together.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:modditechdesigns@gmail.com">modditechdesigns@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-code-branch" aria-hidden="true"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://modditechdesigns-ctrl.github.io/moddi-tech-designs/" target="_blank" rel="noopener noreferrer">View Our Work</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-connect">
+                            <p>Connect with us:</p>
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/moddi.techdesigns/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram (opens in new tab)">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@modditechdesigns" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our TikTok (opens in new tab)">
+                                    <i class="fab fa-tiktok" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/moddi-tech-designs-58a114392/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn (opens in new tab)">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/modditechdesigns-ctrl" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our GitHub (opens in new tab)">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="projectForm" aria-label="Project inquiry form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name" aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com" aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="projectType">Project Type *</label>
+                                <select id="projectType" name="projectType" required aria-required="true">
+                                    <option value="">Select type</option>
+                                    <option value="web">Web Application</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="ai">AI Solution</option>
+                                    <option value="full-stack">Full Stack Project</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget *</label>
+                                <select id="budget" name="budget" required aria-required="true">
+                                    <option value="">Select range</option>
+                                    <option value="1k-5k">$1,000 - $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-30k">$15,000 - $30,000</option>
+                                    <option value="30k+">$30,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="description">Project Description *</label>
+                                <textarea id="description" name="description" required rows="4" placeholder="Describe your project, requirements, and goals..." aria-required="true"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Submit Project
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#main" class="logo" aria-label="Moddi Tech Designs home">
+                        <div class="logo-icon" aria-hidden="true">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">MODDI</span>
+                            <span class="logo-subtitle">Tech Designs</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Full Stack Development & AI Integration</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">Web Development</a>
+                        <a href="#services">Mobile Development</a>
+                        <a href="#services">AI Integration</a>
+                        <a href="#services">Backend Systems</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <a href="#ai">AI Chatbots</a>
+                        <a href="#ai">Predictive Analytics</a>
+                        <a href="#ai">Computer Vision</a>
+                        <a href="#ai">NLP Solutions</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/modditechdesigns-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/moddi-tech-designs-58a114392/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://www.instagram.com/moddi.techdesigns/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="mailto:modditechdesigns@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Moddi Tech Designs. All rights reserved.</p>
+                <p>Professional Software Development & AI Integration</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
